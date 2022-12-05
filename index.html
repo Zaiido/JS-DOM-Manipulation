@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5de484b48d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ZaiTech Mobile</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="shop-name">ZaiTech Mobile</h1>
+      <input class="function-input" type="text" id="new-title" />
+      <button onclick="changeH1()" class="function-button">
+        Personalize Title
+      </button>
+    </header>
+    <div class="top-products">
+      <h2>OUR TOP 5 PRODUCTS</h2>
+      <button onclick="changeBackgroundColor()" class="function-button">
+        Change Background Color
+      </button>
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img src="images/note20.jpg" alt="Samsung Galaxy Note 20 Image" />
+            <div class="product-info">
+              Samsung Galaxy Note 20
+              <p>
+                Operating system Android 10.0, Memory storage capacity 8 GB,
+                Color Gray, Screen Size 6.7 Inches
+              </p>
+              <a
+                href="https://www.amazon.de/-/en/SM-N980FZAGEUB-Samsung-Galaxy-Note20-Grey/dp/B08D6QB69L/ref=sr_1_2?crid=3SX0P5JE1Z7I5&keywords=samsung+galaxy+note+20&qid=1670248674&sprefix=samsung+galaxy+note+20%2Caps%2C98&sr=8-2"
+                target="_blank"
+                >Amazon Link <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <p class="price">€799</p>
+            </div>
+          </td>
+          <td>
+            <img src="images/iphone12.jpg" alt="Iphone12 Image" />
+            <div class="product-info">
+              Iphone 12
+              <p>
+                Operating system IOS 14, Memory storage capacity 64 GB, Color
+                Purple, Screen Size 6.1 Inches
+              </p>
+              <a
+                href="https://www.amazon.de/-/en/MJNP3ZD-A-Apple-iPhone-12/dp/B093373CD2/ref=sr_1_3?keywords=iphone+12+lila&qid=1670249008&sprefix=iphone+12+lil%2Caps%2C95&sr=8-3"
+                target="_blank"
+                >Amazon Link <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <p class="price">€775</p>
+            </div>
+          </td>
+          <td>
+            <img
+              src="images/note20ultra.jpg"
+              alt="Samsung Galaxy Note 20 Ultra Image"
+            />
+            <div class="product-info">
+              Samsung Galaxy Note 20 Ultra
+              <p>
+                Operating system Android, Memory storage capacity 12 GB, Color
+                Mystic White, Screen Size 6.9 Inches
+              </p>
+              <a
+                href="https://www.amazon.de/-/en/Samsung-Galaxy-internal-Android-Version-Mystic-White/dp/B08DRJ8F59/ref=sr_1_5?crid=2532EBZ3YID3S&keywords=samsung%2Bgalaxy%2Bnote%2B20%2Bultra%2Bwei%C3%9F&qid=1670249205&sprefix=samsung%2Bgalaxy%2Bnote%2B20%2Bultra%2Bwhit%2Caps%2C110&sr=8-5&th=1"
+                target="_blank"
+                >Amazon Link <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <p class="price">€1027</p>
+            </div>
+          </td>
+          <td>
+            <img src="images/zflip.jpg" alt="Samsung Galaxy Flip Z Image" />
+            <div class="product-info">
+              Samsung Galaxy Flip Z<br />
+              <p>
+                Operating system Android 10.0, Memory storage capacity 128 GB,
+                Color Black, Screen Size 6 Inches
+              </p>
+              <a
+                href="https://www.amazon.de/-/en/dp/B09HHKTTZD/ref=sr_1_2?crid=D31CTVUS16W1&keywords=samsung%2Bgalaxy%2Bflip%2BZ&qid=1670249395&sprefix=samsung%2Bgalaxy%2Bflip%2Bz%2Caps%2C99&sr=8-2&th=1"
+                target="_blank"
+                >Amazon Link <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <p class="price">€587</p>
+            </div>
+          </td>
+          <td>
+            <img src="images/s21.jpg" alt="Samsung Galaxy S21 Image" />
+            <div class="product-info">
+              Samsung Galaxy S21
+              <p>
+                Operating system Android 11, Memory storage capacity 8 GB, Color
+                Gray,Screen Size 6.2 Inches
+              </p>
+              <a
+                href="https://www.amazon.de/-/en/Samsung-Galaxy-S21-5G-Smartphone/dp/B08Q8MM6ZC/ref=sr_1_2?crid=2Y348TO6K823J&keywords=samsung+galaxy+s21&qid=1670249499&sprefix=samsung+galaxy+s21%2Caps%2C95&sr=8-2"
+                target="_blank"
+                >Amazon Link <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <p class="price">€570</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="buttons-10-12">
+      <button onclick="addClassToAmazonLink()" class="function-button">
+        Add Class to Links
+      </button>
+      <button onclick="imageVisibility()" class="function-button">
+        Change Image Visibility
+      </button>
+      <button onclick="changePriceColor()" class="function-button">
+        Change Price Color
+      </button>
+    </div>
+    <footer>
+      <div class="logo">ZaiTech Mobile</div>
+      <div class="address">
+        <i class="fa-solid fa-location-dot"></i>
+        <p id="shop-address">Berlin, Germany</p>
+      </div>
+      <div>
+        <input
+          class="function-input"
+          id="address-input"
+          type="text"
+          id="new-title"
+        />
+        <button onclick="fakeAddress()" class="function-button">
+          Change Address
+        </button>
+      </div>
+      <div class="message-section">
+        <textarea
+          id="message"
+          placeholder="Send us a message..."
+          rows="3"
+          cols="30"
+        ></textarea>
+        <div class="send-button">
+          <button>Send</button>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function changeH1() {
+        let inputNode = document.getElementById("new-title").value;
+        let h1Node = document.getElementById("shop-name");
+        if (inputNode === "") {
+          alert("THE TITLE SHOULD NOT BE EMPTY.");
+        } else {
+          h1Node.innerText = inputNode;
+        }
+      }
+
+      function changeBackgroundColor() {
+        let bodyNode = document.getElementsByTagName("body")[0];
+        bodyNode.classList.add("page-background");
+      }
+
+      function fakeAddress() {
+        let addressNode = document.getElementById("shop-address");
+        let inputNode = document.getElementById("address-input").value;
+        if (inputNode === "") {
+          alert("INSERT AN ADDRESS.");
+        } else {
+          addressNode.innerText = inputNode;
+        }
+      }
+
+      function addClassToAmazonLink() {
+        let aNodes = document.getElementsByTagName("a");
+        for (let i = 0; i < aNodes.length; i++) {
+          aNodes[i].classList.add("amazon-link");
+        }
+      }
+
+      function imageVisibility() {
+        let imgNodes = document.getElementsByTagName("img");
+        for (let i = 0; i < imgNodes.length; i++) {
+          imgNodes[i].classList.toggle("img-visibility");
+        }
+      }
+
+      function changePriceColor() {
+        let rColor = Math.floor(Math.random() * 256);
+        let gColor = Math.floor(Math.random() * 256);
+        let bColor = Math.floor(Math.random() * 256);
+        let priceNodes = document.getElementsByClassName("price");
+        for (let i = 0; i < priceNodes.length; i++) {
+          priceNodes[i].style.color = `rgb(${rColor}, ${gColor}, ${bColor})`;
+        }
+      }
+    </script>
+  </body>
+</html>

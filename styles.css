@@ -107,8 +107,8 @@ footer .message-section {
 
 .product-info a {
     text-decoration: none;
+    font-size: 14px;
     color: inherit;
-    font-size: 13px;
 }
 
 .product-info .price {
@@ -145,4 +145,8 @@ footer .message-section {
 
 .img-visibility {
     visibility: hidden;
+}
+
+a.amazon-link {
+    color: rgb(66, 126, 181)
 }
